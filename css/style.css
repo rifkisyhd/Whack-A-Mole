@@ -1,0 +1,332 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  background-color: #eaeaea;
+  background-image: url(../img/bg6.jpg);
+  
+}
+
+
+.navbar {
+  color: white;
+  text-shadow: 5px 5px rgba(128, 128, 128, 0.548);
+  font-size: 2.5rem;
+  padding: 20px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar span {
+  color: rgb(255, 255, 255);
+}
+
+.navbar.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(237, 152, 54, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+/* warna background */
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(90, 49, 6);
+  z-index: -1;
+}
+
+.utama {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff67;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* start deksripsi game */
+.deskripsi {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff67;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.deskripsi h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.deskripsi p {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+
+.flowchart {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff67;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.flowchart h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  display: inline-block;
+  width: 100%;
+}
+.flowchart img {
+  width: 50%;
+}
+/* end flowchart game */
+
+/* start skenario */
+.skenario {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff67;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.skenario h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  display: inline-block;
+  width: 100%;
+}
+.skenario p {
+  font-weight: 400;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+/* end skenario */
+
+.row h1 {
+  margin-bottom: 25px;
+}
+
+.row {
+  padding-top: 50px;
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff67;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 50px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.column {
+  flex: 1;
+}
+
+.kanan {
+  padding: 10px 0px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  /* font-family: "comic sans ms"; */
+  font-family: "poppins";
+  font-weight: 600;
+}
+
+.utama{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kotak{
+  flex: 1;
+  padding: 0 20px;
+}
+
+.gambar{
+  flex: 1;
+  text-align: right;
+}
+
+.mainan {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.button{
+  display: block;
+  margin: auto;
+  color: white;
+  background-color: chocolate;
+  border-radius: 17px;
+  width: 150px; 
+  height: 40px; 
+  font-size: 18px;
+  box-shadow: 2px 2px 4px rgba(139, 7, 115, 0.6),
+    -2px -2px 4px rgba(41,128,185,1);
+  position: relative; 
+  top: -20px; 
+}
+
+.container {
+  background-color: #ffffff67;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 50px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: justify;
+  /* font-family: "comic sans ms"; */
+  font-family: "poppins";
+  font-size: 15px;
+}
+
+
+
+.content {
+  display: inline-table;
+  width: 260px;
+  height: 500px;
+  /* background-color: pink; */
+  margin: 0px 25px;
+}
+
+
+.foto {
+  /* height: 200px; */
+  display: block;
+  margin: auto;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color:  rgb(90, 49, 6);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+  margin-top: 10px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color:  rgb(90, 49, 6);
+  background-color: rgb(248, 232, 218);
+  border-radius: 20px;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidebar .closebtn:hover {
+  color: rgb(214, 111, 1);
+  background-color: rgb(248, 232, 218);
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-right: 100px;
+  display: flex;
+  position: fixed;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  z-index: 2;
+}
+
+.openbtn:hover {
+  color: rgb(214, 111, 1);
+  background-color: rgb(248, 232, 218);
+  border-radius: 25px;
+}
+
+.sidebar .sub-menu {
+  margin-left: 60px;
+  font-size: 18px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,14 @@
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large
+}
+li {
+    font-family:'Times New Roman', Times, serif;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+.porto img{
+    width: 500px;
+    height: 400px;
+}

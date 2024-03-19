@@ -1,0 +1,184 @@
+:root {
+  --bg: #333;
+  --font-1: 400;
+  --font-2: 500;
+  --font-bold: 700;
+}
+
+* {
+  font-family: "poppins";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.navbar::before,
+.navbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 9999px;
+  background-color: var(--bg);
+  z-index: -1;
+}
+
+.navbar::before {
+  margin-left: -9999px;
+}
+
+.navbar::after {
+  margin-right: -9999px;
+}
+
+.logo a {
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.logo a span {
+  font-weight: 700;
+  color: orange;
+}
+
+.nav-list {
+  list-style-type: none;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 10px;
+}
+
+.nav-list li a {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  color: orange;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 100px 0px;
+}
+
+.hero-kiri {
+  padding-left: 0;
+  list-style: none;
+  flex: 1;
+  font-weight: 800;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.hero-kiri span {
+  color: orange;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: var(--font-1);
+}
+
+.button {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: var(--font-1);
+  color: white;
+  background-color: var(--bg);
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 2px rgba(167, 167, 167, 0.6);
+}
+
+.button:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button a:hover {
+  color: orange;
+}
+
+.hero-kanan {
+  list-style: none;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ukuran {
+  width: 60%;
+}
+
+/* end section hero */
+
+.about {
+  height: 500px;
+  margin-top: 100px;
+}
+.about {
+  /* padding-top: 50px; */
+  text-align: center;
+}
+.about h1 {
+  color: orange;
+  font-weight: 700;
+}
+
+.about p {
+  font-size: 1rem;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  max-width: 9999px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.8rem;
+}
