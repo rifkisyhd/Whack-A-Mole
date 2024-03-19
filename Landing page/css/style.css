@@ -209,15 +209,15 @@ body {
   flex: 1;
 }
 
-.kanan {
+.parent-content {
+  display: flex;
+  flex-direction: row;
   padding: 10px 0px;
   width: 100%;
-  align-items: center;
   text-align: center;
 }
 
 p {
-  display: flex;
   justify-content: center;
   margin-top: 20px;
   font-size: 20px;
@@ -258,13 +258,13 @@ p {
   -webkit-backdrop-filter: blur(10px);
   text-align: justify;
   /* font-family: "comic sans ms"; */
-  font-family: "poppins";
   font-size: 15px;
+  min-height: 352px;
 }
 
 .content {
   display: inline-table;
-  width: 260px;
+  width: 360px;
   height: 500px;
   /* background-color: pink; */
   margin: 0px 25px;
