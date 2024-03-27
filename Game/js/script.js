@@ -45,9 +45,7 @@ function mulai() {
   papanSkor.textContent = 0;
   document.querySelector('.skor').textContent = skor;
   munculkanTikus();
-  setTimeout(() => {
-    selesai = true;
-  }, 10000);
+  
 }
 
 function pukul() {
