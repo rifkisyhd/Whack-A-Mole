@@ -50,14 +50,6 @@ function mulai() {
     selesai = true;
   }, 10000);
   closePopup();
-}
-
-function pukul() {
-  skor++;
-  this.parentNode.classList.remove("muncul");
-  pop.play();
-  papanSkor.textContent = skor;
-}
 
 tikus.forEach((t) => {
   t.addEventListener("click", pukul);
@@ -148,4 +140,4 @@ function startGame() {
 
 function closePopup() {
   document.getElementById("popup-container").style.display = "none";
-}
+}}
