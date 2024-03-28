@@ -1,5 +1,5 @@
-body{
-  background-image: url(../img/bg6.jpg) ;
+body {
+  background-image: url(../img/bg6.jpg);
 }
 
 h1 {
@@ -8,27 +8,25 @@ h1 {
   text-align: center;
   font-family: italic;
   margin: 10px;
-  
 }
 
-h2{
+h2 {
   font-size: 40px;
   font-family: arial;
 }
 
-.timer{
+.timer {
   text-align: center;
   font-size: 45px;
-  margin-left: 375px;
+  margin-left: 95px;
 }
 
 .score-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .high-score-container {
-  margin-left: auto;
 }
 
 button {
@@ -37,16 +35,15 @@ button {
   color: white;
   background-color: chocolate;
   border-radius: 17px;
-  width: 150px; 
-  height: 40px; 
+  width: 150px;
+  height: 40px;
   font-size: 18px;
-  box-shadow: 2px 2px 4px rgba(139, 7, 115, 0.6),
-    -2px -2px 4px rgba(41,128,185,1);
-  position: relative; 
-  top: -10px; 
+  box-shadow: 2px 2px 4px rgba(139, 7, 115, 0.6), -2px -2px 4px rgba(41, 128, 185, 1);
+  position: relative;
+  top: -10px;
 }
 
-button:hover{
+button:hover {
   background-color: rgb(99, 99, 99);
 }
 
@@ -69,7 +66,7 @@ button:hover{
 }
 
 .tanah::after {
-  content: '';
+  content: "";
   display: block;
   width: 200px;
   height: 100px;

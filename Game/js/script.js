@@ -1,7 +1,8 @@
-const tanah = document.querySelectorAll('.tanah');
-const tikus = document.querySelectorAll('.tikus');
-const papanSkor = document.querySelector('.papan-skor');
-const pop = document.querySelector('#pop');
+const tanah = document.querySelectorAll(".tanah");
+const tikus = document.querySelectorAll(".tikus");
+const papanSkor = document.querySelector(".papan-skor");
+const pop = document.querySelector("#pop"); /* audio */
+const popup1 = document.querySelector ("popup-karakter")
 
 let tanahSebelumnya;
 let selesai;
@@ -29,10 +30,10 @@ function randomWaktu(min, max) {
 function munculkanTikus() {
   const tRandom = randomTanah(tanah);
   const wRandom = randomWaktu(300, 1000);
-  tRandom.classList.add('muncul');
+  tRandom.classList.add("muncul");
 
   setTimeout(() => {
-    tRandom.classList.remove('muncul');
+    tRandom.classList.remove("muncul");
     if (!selesai) {
       munculkanTikus();
     }
@@ -43,41 +44,42 @@ function mulai() {
   selesai = false;
   skor = 0;
   papanSkor.textContent = 0;
-  document.querySelector('.skor').textContent = skor;
+  document.querySelector(".skor").textContent = skor;
   munculkanTikus();
   setTimeout(() => {
     selesai = true;
   }, 10000);
+  closePopup();
 }
 
 function pukul() {
   skor++;
-  this.parentNode.classList.remove('muncul');
+  this.parentNode.classList.remove("muncul");
   pop.play();
   papanSkor.textContent = skor;
 }
 
-tikus.forEach(t => {
-  t.addEventListener('click', pukul);
+tikus.forEach((t) => {
+  t.addEventListener("click", pukul);
 });
 
 function updateTimer() {
   const menit = Math.floor(waktuSisa / 60);
   let detik = waktuSisa % 60;
   if (detik < 10) {
-    detik = '0' + detik;
+    detik = "0" + detik;
   }
 
   const timerText = `${menit}:${detik}`;
-  document.querySelector('.timer').textContent = timerText;
+  document.querySelector(".timer").textContent = timerText;
 
   waktuSisa--;
   if (waktuSisa < 0) {
     clearInterval(timerInterval);
     selesai = true;
-    document.getElementById('final-score').textContent = skor;
+    document.getElementById("final-score").textContent = skor;
     showPopup();
-  }  
+  }
 }
 
 function mulai() {
@@ -94,13 +96,13 @@ function mulai() {
   munculkanTikus();
   setTimeout(() => {
     selesai = true;
-  }, durasiPermainan * 1000); 
+  }, durasiPermainan * 1000);
 }
 
 function updateHighScore() {
   if (skor > highScore) {
     highScore = skor;
-    document.querySelector('.high-score').textContent = highScore;
+    document.querySelector(".high-score").textContent = highScore;
   }
 }
 
@@ -111,34 +113,39 @@ function resetGame() {
   waktuSisa = durasiPermainan;
   papanSkor.textContent = 0;
   updateTimer();
-  document.querySelector('.timer').textContent = '00:00';
-  document.querySelectorAll('.tanah').forEach(tanah => {
-    tanah.classList.remove('muncul');
+  document.querySelector(".timer").textContent = "00:00";
+  document.querySelectorAll(".tanah").forEach((tanah) => {
+    tanah.classList.remove("muncul");
   });
   updateHighScore();
 }
 
-
 function pukul() {
   skor++;
-  this.parentNode.classList.remove('muncul');
+  this.parentNode.classList.remove("muncul");
   pop.play();
   papanSkor.textContent = skor;
   updateHighScore();
 }
 
-document.querySelector('.reset').addEventListener('click', resetGame);
+document.querySelector(".reset").addEventListener("click", resetGame);
 
 function showPopup() {
-  document.getElementById('popup-container').style.display = 'block';
-  document.getElementById('popup-container').addEventListener('click', function(event) {
+  document.getElementById("popup-container").style.display = "block";
+  document.getElementById("popup-container").addEventListener("click", function (event) {
     if (event.target === this) {
       closePopup();
     }
   });
+}
+
+function startGame() {
+  var selectedAnimal = document.getElementById("animal-selector").value;
+  alert("Anda memilih: " + selectedAnimal);
   
 }
 
+
 function closePopup() {
-  document.getElementById('popup-container').style.display = 'none';
+  document.getElementById("popup-container").style.display = "none";
 }
