@@ -1,0 +1,128 @@
+body{
+    background-image: url(../img/bg6.jpg) ;
+  }
+  .container {
+    max-width: 800px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  h1 {
+    text-shadow: 5px 5px rgba(128, 128, 128, 0.548);
+    font-size: 50px;
+    text-align: center;
+    font-family: italic;
+    margin: 10px;
+  }
+  
+  h2{
+    font-size: 40px;
+    font-family: arial;
+  }
+  
+  .timer{
+    text-align: center;
+    font-size: 45px;
+    margin-left: 375px;
+  }
+  
+  .score-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .high-score-container {
+    margin-left: auto;
+  }
+  
+  button {
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: chocolate;
+    border-radius: 17px;
+    width: 150px; 
+    height: 40px; 
+    font-size: 18px;
+    box-shadow: 2px 2px 4px rgba(139, 7, 115, 0.6),
+      -2px -2px 4px rgba(41,128,185,1);
+    position: relative; 
+    top: -10px; 
+  }
+  
+  button:hover{
+    background-color: rgb(99, 99, 99);
+  }
+  
+  .container {
+    width: 600px;
+    margin: auto;
+    cursor: url(../img/palu1.png), auto;
+  }
+  
+  .container:active {
+    cursor: url(../img/palu2.png), auto;
+  }
+  
+  .tanah {
+    width: 200px;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+  }
+  
+  .tanah::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(../img/tanah.png) bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    bottom: -20px;
+  }
+  
+  .kelinci {
+    width: 100%;
+    height: 100%;
+    background: url(../img/kelinci.png) bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100px;
+    transition: top 0.3s;
+  }
+  
+  .tanah.muncul .kelinci {
+    top: -15px;
+  }
+  
+  .popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .popup {
+    position: absolute;
+    font-family: arial;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .popup button {
+    margin-top: 20px;
+  }
+
+  
+  
+ 

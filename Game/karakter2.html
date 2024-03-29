@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilihan Karakter</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+  <h1>Whack A Mole</h1>
+
+  <div class="score-container">
+    <h2>Score : <span class="papan-skor">0</span></h2>
+    <h2 class="timer">00:00</h2>
+    <h2 class="high-score-container">High Score : <span class="high-score">0</span></h2>
+  </div>
+
+  <button type="button" class="mulai" onclick="mulai()">Mulai!</button>
+
+  <div class="popup-container" id="popup-container">
+    <div class="popup">
+      <h3>Waktu Habis!</h3>
+      <p>Skor Anda: <span id="final-score"></span></p>
+      <button onclick="closePopup()">Tutup</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="tanah">
+      <div class="kucing"></div>
+    </div>
+    <div class="tanah">
+      <div class="kucing"></div>
+    </div>
+    <div class="tanah">
+      <div class="kucing"></div>
+    </div>
+    <div class="tanah">
+      <div class="kucing"></div>
+    </div>
+    <div class="tanah">
+      <div class="kucing"></div>
+    </div>
+    <div class="tanah">
+      <div class="kucing"></div>
+    </div>
+  </div>
+
+  <audio src="audio/Pop.mp3" id="pop"></audio>
+
+  <script src="js/script2.js"></script>
+</body>
+</html>

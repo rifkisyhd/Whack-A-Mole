@@ -1,12 +1,12 @@
 const tanah = document.querySelectorAll('.tanah');
-const tikus = document.querySelectorAll('.tikus');
+const kelinci = document.querySelectorAll('.kelinci');
 const papanSkor = document.querySelector('.papan-skor');
 const pop = document.querySelector('#pop');
 
 let tanahSebelumnya;
 let selesai;
 let skor;
-let durasiPermainan = 60; // Durasi permainan dalam detik
+let durasiPermainan = 20; // Durasi permainan dalam detik
 let waktuSisa = durasiPermainan;
 let timerInterval;
 let highScore = 0;
@@ -26,15 +26,15 @@ function randomWaktu(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
 
-function munculkanTikus() {
+function munculkanKelinci() {
   const tRandom = randomTanah(tanah);
-  const wRandom = randomWaktu(100, 1500);
+  const wRandom = randomWaktu(100, 700);
   tRandom.classList.add('muncul');
 
   setTimeout(() => {
     tRandom.classList.remove('muncul');
     if (!selesai) {
-      munculkanTikus();
+      munculkanKelinci();
     }
   }, wRandom);
 }
@@ -44,7 +44,7 @@ function mulai() {
   skor = 0;
   papanSkor.textContent = 0;
   document.querySelector('.skor').textContent = skor;
-  munculkanTikus();
+  munculkanKelinci();
   setTimeout(() => {
     selesai = true;
   }, 10000);
@@ -57,7 +57,7 @@ function pukul() {
   papanSkor.textContent = skor;
 }
 
-tikus.forEach(t => {
+kelinci.forEach(t => {
   t.addEventListener('click', pukul);
 });
 
@@ -91,7 +91,7 @@ function mulai() {
   selesai = false;
   skor = 0;
   papanSkor.textContent = 0;
-  munculkanTikus();
+  munculkanKelinci();
   setTimeout(() => {
     selesai = true;
   }, durasiPermainan * 1000); 
@@ -142,3 +142,6 @@ function showPopup() {
 function closePopup() {
   document.getElementById('popup-container').style.display = 'none';
 }
+
+
+

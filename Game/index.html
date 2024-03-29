@@ -8,57 +8,31 @@
   </head>
 
   <body>
-    <h1>Whack A Mole</h1>
+    <h3>Pilih Karakter</h3>
 
-    <div class="score-container">
-      <h2>Score : <span class="papan-skor">0</span></h2>
-      <h2 class="timer">00:00</h2>
-      <h2 class="high-score-container">High Score : <span class="high-score">0</span></h2>
+    <div class="menu">
+        <div class="karakter1">
+          <p>Mudah</p>
+            <div class="isi-karakter1">
+                <img id="img-karakter1" src="img/tikus.png"><br>
+            <a class="button" href="karakter1.html">Pilih</a>
+            </div>
+        </div>
+        <div class="karakter2">
+          <p>Sedang</p>
+            <div class="isi-karakter2">
+                <img id="img-karakter2" src="img/kucing.png"><br>
+                <a class="button" href="karakter2.html">Pilih</a>
+            </div>
+        </div>
+      <div class="karakter3">
+        <p>Sulit</p>
+            <div class="isi-karakter3">
+                <img id="img-karakter3" src="img/kelinci.png"><br>
+                <a class="button" href="karakter3.html">Pilih</a>
+            </div>
+        </div> 
     </div>
-
-    <button type="button" class="pilih" onclick="startgame()">Mulai!</button>
-
-    <div class="popup-karakter" id="popup1">
-      <div class="karakter">
-        <h2>Pilih Hewan:</h2>
-        <select id="animal-selector">
-          <option value="mole">Tikus</option>
-          <option value="rabbit">Kelinci</option>
-        </select>
-        <button class="pilih" onclick="mulai()">Mulai Permainan</button>
-      </div>
-    </div>
-
-    <div class="popup-container" id="popup-container">
-      <div class="popup">
-        <h3>Waktu Habis!</h3>
-        <p>Skor Anda: <span id="final-score"></span></p>
-        <button onclick="closePopup()">Tutup</button>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="tanah">
-        <div class="tikus"></div>
-      </div>
-      <div class="tanah">
-        <div class="tikus"></div>
-      </div>
-      <div class="tanah">
-        <div class="tikus"></div>
-      </div>
-      <div class="tanah">
-        <div class="tikus"></div>
-      </div>
-      <div class="tanah">
-        <div class="tikus"></div>
-      </div>
-      <div class="tanah">
-        <div class="tikus"></div>
-      </div>
-    </div>
-
-    <audio src="audio/Pop.mp3" id="pop"></audio>
 
     <script src="js/script.js"></script>
   </body>
