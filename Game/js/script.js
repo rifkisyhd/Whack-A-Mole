@@ -6,7 +6,7 @@ const pop = document.querySelector('#pop');
 let tanahSebelumnya;
 let selesai;
 let skor;
-let durasiPermainan = 40; // Durasi permainan dalam detik
+let durasiPermainan = 35; // Durasi permainan dalam detik
 let waktuSisa = durasiPermainan;
 let timerInterval;
 let highScore = 0;
@@ -28,7 +28,7 @@ function randomWaktu(min, max) {
 
 function munculkanTikus() {
   const tRandom = randomTanah(tanah);
-  const wRandom = randomWaktu(100, 1500);
+  const wRandom = randomWaktu(300, 1000);
   tRandom.classList.add('muncul');
 
   setTimeout(() => {

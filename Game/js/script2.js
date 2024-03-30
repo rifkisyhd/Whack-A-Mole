@@ -6,7 +6,7 @@ const pop = document.querySelector('#pop');
 let tanahSebelumnya;
 let selesai;
 let skor;
-let durasiPermainan = 30; // Durasi permainan dalam detik
+let durasiPermainan = 25; // Durasi permainan dalam detik
 let waktuSisa = durasiPermainan;
 let timerInterval;
 let highScore = 0;
@@ -28,7 +28,7 @@ function randomWaktu(min, max) {
 
 function munculkanKucing() {
   const tRandom = randomTanah(tanah);
-  const wRandom = randomWaktu(600, 900);
+  const wRandom = randomWaktu(150, 900);
   tRandom.classList.add('muncul');
 
   setTimeout(() => {
