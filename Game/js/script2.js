@@ -6,7 +6,7 @@ const pop = document.querySelector('#pop');
 let tanahSebelumnya;
 let selesai;
 let skor;
-let durasiPermainan = 35; // Durasi permainan dalam detik
+let durasiPermainan = 30; // Durasi permainan dalam detik
 let waktuSisa = durasiPermainan;
 let timerInterval;
 let highScore = 0;
